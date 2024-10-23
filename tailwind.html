@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/site-logo.svg">
+     <link rel="stylesheet" href="./css/main.css">
+       <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>Tailwind</title>
+</head>
+<body class="">
+   <div class="max-w-[1193px] mx-auto text-center py-[50px]">
+    <h1 class="text-[50px]">All about Tailwind</h1>
+    <br>
+    <div class="text-start text-[24px] leading-[49px]">
+        <p>Tailwind CSS is a utility-first CSS framework designed to streamline the process of building custom user interfaces. Unlike traditional CSS frameworks that provide predefined components and styles, Tailwind enables developers to create unique designs by composing utility classes directly in their HTML markup. This approach promotes rapid development and encourages a more consistent design language throughout a project.
+
+            One of the core principles of Tailwind is its use of utility classes, which are small, reusable classes that apply a single styling rule, such as margin, padding, color, or font size. This allows developers to apply styles directly to elements without having to write custom CSS. For example, instead of writing separate CSS for a button, developers can simply add classes like `bg-blue-500`, `text-white`, and `py-2` to an HTML element to achieve the desired appearance.
+            
+            Tailwind is highly customizable, allowing developers to configure the framework to suit their specific design needs. It provides a configuration file where users can define custom colors, spacing, breakpoints, and more. This flexibility enables teams to maintain a consistent design system while still having the freedom to implement unique styles.
+            
+            Another significant feature of Tailwind is its responsive design capabilities. The framework includes a range of responsive utility classes, allowing developers to specify different styles for various screen sizes using simple class prefixes. This makes it easy to create layouts that adapt seamlessly across devices.
+            
+            Tailwind also supports features like dark mode, hover states, and transitions, providing a comprehensive set of tools for modern web development. Additionally, it integrates well with various JavaScript frameworks, such as React, Vue, and Angular, allowing developers to use Tailwind’s utility classes alongside their component-based architectures.
+            
+            The Tailwind community is vibrant and growing, with a wealth of resources available, including documentation, tutorials, plugins, and pre-built components. This ecosystem makes it easier for new users to get started and for experienced developers to enhance their workflows.
+            
+            In summary, Tailwind CSS is a powerful framework that promotes a utility-first approach to styling web applications. By enabling developers to build custom designs quickly and efficiently, Tailwind has become a popular choice for modern web development, enhancing both productivity and maintainability.</p>
+    </div>
+   </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+ theme: {
+   extend: {
+     colors: {
+       clifford: '#da373d',
+     }
+   }
+ }
+}
+ </script>
+ </html>

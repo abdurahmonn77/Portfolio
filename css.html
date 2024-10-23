@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/site-logo.svg">
+     <link rel="stylesheet" href="./css/main.css">
+       <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>CSS</title>
+</head>
+<body class="">
+   <div class="max-w-[1193px] mx-auto text-center py-[50px]">
+    <h1 class="text-[50px]">All about CSS</h1>
+    <br>
+    <div class="text-start text-[24px] leading-[49px]">
+        <p>CSS, or Cascading Style Sheets, is a stylesheet language used to describe the presentation and layout of web pages. It allows developers to control the visual appearance of HTML elements, enabling the separation of content from design. By using CSS, developers can specify colors, fonts, spacing, positioning, and many other visual aspects, creating an aesthetically pleasing and consistent user experience.
+
+            Introduced in the late 1990s, CSS has evolved significantly, with new features and capabilities added over time. It allows for responsive design, which means that web pages can adapt to different screen sizes and devices. This is crucial in today's multi-device world, where users access the web on smartphones, tablets, laptops, and desktops.
+            
+            One of the key features of CSS is its cascading nature, which means that styles can be applied at different levels, including inline styles, internal styles, and external stylesheets. This flexibility enables developers to create a modular and maintainable approach to styling web pages. The "cascading" aspect also means that if multiple styles apply to the same element, the browser determines which style takes precedence based on a hierarchy of rules.
+            
+            CSS supports various selectors that allow developers to target specific elements or groups of elements for styling. This includes class selectors, ID selectors, and attribute selectors, making it possible to apply styles selectively and efficiently. Additionally, CSS offers advanced features such as animations, transitions, and flexbox/grid layouts, enhancing the interactivity and layout capabilities of web pages.
+            
+            The introduction of CSS preprocessors like Sass and Less has further expanded the functionality of CSS. These tools allow developers to use variables, nested rules, and functions, making it easier to write and maintain complex stylesheets.
+            
+            In terms of accessibility, CSS plays a vital role in ensuring that web content is presented clearly and understandably. Well-structured CSS can improve readability and navigation for users with disabilities, enhancing their overall experience on the web.
+            
+            In summary, CSS is an essential language for web development, enabling the creation of visually engaging and user-friendly websites. By mastering CSS, developers can enhance the design and functionality of their web projects, ensuring a better experience for users across all devices.</p>
+    </div>
+   </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+ theme: {
+   extend: {
+     colors: {
+       clifford: '#da373d',
+     }
+   }
+ }
+}
+ </script>
+ </html>

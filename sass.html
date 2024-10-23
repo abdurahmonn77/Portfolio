@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/site-logo.svg">
+     <link rel="stylesheet" href="./css/main.css">
+       <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>SASS</title>
+</head>
+<body class="">
+   <div class="max-w-[1193px] mx-auto text-center py-[50px]">
+    <h1 class="text-[50px]">All about SASS</h1>
+    <br>
+    <div class="text-start text-[24px] leading-[49px]">
+        <p>Sass, or Syntactically Awesome Style Sheets, is a preprocessor scripting language that extends the capabilities of CSS. It allows developers to write styles in a more organized and efficient way by introducing features such as variables, nesting, mixins, and functions. Sass compiles into standard CSS, making it compatible with all web browsers.
+
+            One of the key advantages of Sass is its use of variables, which enable developers to store values such as colors, fonts, and dimensions. This makes it easier to maintain and update styles throughout a project, as changing a variable in one place will automatically update it wherever it’s used. This reduces redundancy and enhances consistency across stylesheets.
+            
+            Nesting is another powerful feature of Sass, allowing developers to write CSS rules in a hierarchical manner that mirrors the HTML structure. This improves readability and makes it easier to see the relationship between elements. For example, styles for child elements can be nested within the parent element, creating a clear visual representation of the structure.
+            
+            Mixins in Sass are reusable chunks of code that can be included in multiple places throughout a stylesheet. This allows developers to create complex styles without repeating code. Mixins can also accept arguments, enabling more dynamic styling options that can adapt based on the input provided.
+            
+            Sass also includes functions and operations, allowing developers to perform calculations and manipulate values directly within the stylesheet. This can be particularly useful for responsive design, where calculations for sizes and positions may be needed based on certain conditions.
+            
+            In addition to these features, Sass offers two syntax styles: the indented syntax (with a `.sass` file extension) that uses indentation for nesting, and the SCSS syntax (with a `.scss` extension) that is more similar to traditional CSS and uses braces and semicolons. This flexibility allows developers to choose the style that best fits their preferences.
+            
+            Overall, Sass enhances the efficiency and maintainability of stylesheets, making it a popular choice among web developers. Its features help streamline the development process, reduce errors, and facilitate better collaboration on large projects. By using Sass, developers can create complex, responsive, and organized styles that improve the overall user experience on the web.</p>
+    </div>
+   </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+ theme: {
+   extend: {
+     colors: {
+       clifford: '#da373d',
+     }
+   }
+ }
+}
+ </script>
+ </html>

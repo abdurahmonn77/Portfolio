@@ -6,8 +6,37 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+body {
+  background-image: linear-gradient(to right, #FFE5D4, #F3E8FF);
+}
 .container {
   margin: 0 auto;
   padding: 0 20px;
 }/*# sourceMappingURL=main.css.map */
+
+.telagram {
+  width: 30px;
+  height: 30px;
+}
+.gradient-text {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7f50, #1e90ff); /* Change colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.programmer {
+  width: 358px;
+  height: 358px;
+  background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.programmer:hover {
+  background-color: rgb(92, 237, 92);
+  background-image: none;
+}

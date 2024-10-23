@@ -3,28 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="Img url here"> -->
-     <!-- <link rel="stylesheet" href="CSS file link here"> -->
-    <title>Site Title</title>
+    <link rel="icon" href="./images/site-logo.svg">
+     <link rel="stylesheet" href="./css/main.css">
+       <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>My Page</title>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header"></div>
+    <header class="site-header pt-[21px]">
+        <div class="containers max-w-[1193px] mx-auto">
+            <div class="header flex items-center justify-between">
+                <a href="#"><img src="./images/site-logo.svg" alt="" width="200" height="100"></a>
+                <nav class="flex gap-[60px]">
+                    <a href="#" class="text-[20px] text-[#666666] hover:text-[#FFB77A] transition-colors">Home</a>
+                    <a href="#" class="text-[20px] text-[#666666] hover:text-[#FFB77A] transition-colors">About</a>
+                    <a href="#" class="text-[20px] text-[#666666] hover:text-[#FFB77A] transition-colors">Projects</a>
+                    <a href="#" class="text-[20px] text-[#666666] hover:text-[#FFB77A] transition-colors">Contact</a>
+                </nav>
+                <div class="contact-wrap flex gap-4">
+                    <a href="https://github.com/coolgrandy" target="blank">
+                        <img src="images/github.svg" alt="">
+                    </a>
+                    <a href="https://t.me/coolgrand69" target="blank">
+                        <img src="./images/telegram.svg" alt="" height="30" width="30">
+                    </a>
+                    
+                </div>
+            </div>
         </div>
     </header>
     <main class="site-main">
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero"></div>
+        <section class="hero-section mt-[220px]">
+            <div class="max-w-[1193px] mx-auto">
+                <div class="hero flex items-center justify-between">
+                    <h1 class="max-w-[636px] text-[58px] text-[#42446E] font-bold">Hi 👋, <br> My name is <br> <span class="gradient-text">Cool Grand</span> <br> I build things for web</h1>
+                    <a href="https://www.instagram.com/ikramoff07" target="blank" class="programmer">
+                        <img src="images/programmer.png" alt="programmer photo" width="349" height="349">
+                    </a>
+                </div>
             </div>
         </section>
-        <!-- section -->
+        <section class="mt-[300px]">
+            <div class="max-w-[1193px] mx-auto">
+            <h2 class="text-[#42446E] text-[48px] font-bold text-center">Techs I can work</h2>
+            <p class="text-[32px] text-[#666666] text-center">Technologies I've been working with recently</p>
+            <div class="mt-[100px] flex items-center justify-between">
+                <a href="html.html" target="blank"><img src="images/html.svg" alt="Hyper Text Markup Language"></a>
+                <a href="css.html" target="blank"><img src="images/css.svg" alt="Cascading Style Sheets"></a>
+                <a href="sass.html" target="blank"><img src="images/sass.svg" alt="Syntactically Awesome Style Sheets"></a>
+                <a href="github.html" target="blank"><img src="images/github-fill.svg" alt="Git Hub"></a>
+                <a href="tailwind.html" target="blank"><img src="images/tailwind.svg" alt="Tailwind Library"></a>
+            </div>
+            </div>
+        </section>
     </main>
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer"></div>
+    <footer class="site-footer mt-[203px] bg-black py-[50px]">
+        <div class="containers max-w-[1193px] mx-auto">
+            <div class="header flex items-center justify-between">
+                <a href="#"><img src="./images/site-logo.svg" alt="" width="200" height="100"></a>
+                <div class="flex gap-[60px]">
+                    <a href="mailto:abdurahmonikromov634@gmail.com" class="text-white">abdurahmonikromov634@gmail.com</a>
+                    <a href="tel:+998990532733" class="text-white">+998 99 053-27-33</a>
+                </div>
+                <div class="contact-wrap flex gap-4">
+                    <a href="https://github.com/coolgrandy" target="blank">
+                        <img src="images/github.svg" alt="">
+                    </a>
+                    <a href="https://t.me/coolgrand69" target="blank">
+                        <img src="./images/telegram.svg" alt="" height="30" width="30">
+                    </a>
+                    
+                </div>
+            </div>
         </div>
     </footer>
 </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+   tailwind.config = {
+     theme: {
+       extend: {
+         colors: {
+           clifford: '#da373d',
+         }
+       }
+     }
+   }
+     </script>
 </html>
